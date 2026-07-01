@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!-- Indica que es HTML5. Siempre primera línea. -->
+ 
+<html lang='es'>
+<!-- Elemento raíz. lang='es' ayuda a lectores de pantalla y buscadores. -->
+ 
+  <head>
+  <!-- Metadatos: el navegador los necesita pero no los muestra al usuario -->
+ 
+    <meta charset='UTF-8'>
+    <!-- Codificación de caracteres: soporta tildes, ñ, emojis -->
+ 
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <!-- Sin esto, en celular la página se ve muy pequeña -->
+ 
+    <title>TechStore - Tu tienda de tecnología</title>
+    <!-- Aparece en la pestaña del navegador y en Google -->
+ 
+    <link rel='stylesheet' href='estilos.css'>
+    <!-- Vincula el archivo CSS. El path es relativo al index.html -->
+    <!-- estilos.css debe estar en la misma carpeta que index.html -->
+  </head>
+
+  <body>
+    <main>
+    <section>
+      <h2>Iniciar sesión</h2>
+
+      <h3><a href="index.html">Volver al inicio</a></h3>
+
+      <form id="form-login">
+        <div class="campo">
+          <label for="email">Email *</label>
+          <input type="email" id="email" name="email"
+                 placeholder="tu@email.com" required>
+        </div>
+
+        <div class="campo">
+          <label for="password">Contraseña *</label>
+          <input type="password" id="password" name="password"
+                 placeholder="Tu contraseña" required>
+        </div>
+
+        <button type="submit">Iniciar sesión</button>
+
+      </form>
+
+      <p class="link-pie">
+        ¿No tenés cuenta? <a href="registro.html">Registrate</a>
+      </p>
+
+      <script src='js/login.js'></script>
+
+    </section>
+    </main>
+ </body>
+
+</html>
